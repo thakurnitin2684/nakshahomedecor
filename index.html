@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="mainstyle.css">
+    <title>Naksha Home Decor </title>
+
+    <link rel="icon" href="images/naksha_logo.jpg" type="image/gif" sizes="16x16">
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid" style="max-width:1400px">
+
+        <div class="row ">
+
+
+            <!-- sidebar for big screen -->
+            <nav class="red  sidebar" id="mySidebar"><br>
+                <div class="container-fluid">
+                    <!-- <img src="images/naksha_logo.jpg" alt="naksha logo"> -->
+                    <h3 class="padding-64"><b>Naksha Home<br>Decor</b></h3>
+                </div>
+                <div>
+                    <a href="#" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Home</a>
+                    <a href="#showcase" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Showcase</a>
+                    <a href="#services" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Services</a>
+                    <a href="#location" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Location</a>
+                    <a href="#Proprietor" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Proprietor</a>
+                    <a href="#customerreviews" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Customer Reviews</a>
+                    <a href="#contact" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Contact</a>
+                </div>
+            </nav>
+
+
+
+
+
+            <!-- sidebar for small screen -->
+            <nav class="red  smallsidebar " id="mysmallSidebar"><br>
+                <a href="javascript:void(0)" onclick="sidebarclose()" class="btn btn-cus btn-lg btn-block red hide-large display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+
+                <div class="container-fluid">
+                    <h3 class="smallpadding-64"><b>Naksha Home<br>Decor</b></h3>
+                </div>
+                <div>
+                    <a href="#" onclick="sidebarclose()" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Home</a>
+                    <a href="#showcase" onclick="sidebarclose()" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Showcase</a>
+                    <a href="#services" onclick="sidebarclose()" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Services</a>
+                    <a href="#location" onclick="sidebarclose()" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Location</a>
+                    <a href="#Proprietor" onclick="sidebarclose()" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Proprietor</a>
+                    <a href="#customerreviews" onclick="sidebarclose()" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Customer Reviews</a>
+                    <a href="#contact" onclick="sidebarclose()" class="bar-item btn hover-white" style="width: 90%;margin-left: 10px;">Contact</a>
+                </div>
+            </nav>
+
+
+            <!-- Top menu on small screens -->
+            <header class="container-fluid top hide-large red padding" style="width: 100%;">
+                <a href="javascript:void(0)" class=" btn red " style="margin-right: 16px; font-size: 24px" onclick="sidebaropen()">&#9776;</a>
+                <span style=" font-size: 24px"> Naksha Home Decor</span>
+            </header>
+
+
+
+
+            <!-- Overlay effect when opening sidebar on small screens -->
+            <div class="overlay hide-large" onclick="sidebarclose()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+
+
+
+
+            <!-- showcase heading -->
+            <div class="col-md-8 colp" style="margin-top:90px;" id="showcase">
+                <h1 class="mainHead"><b>Modular Kitechens And Other Home Decor</b></h1>
+                <h1 class="subHead"><b>Showcase</b></h1>
+                <hr style="width:50px;border:5px solid #3b9ec4; margin-left:5px" class="line">
+
+
+                <!-- photo gallery -->
+                <div class="row  ">
+                    <div class="col-md-6 ">
+                        <img src="images/showcase1.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                        <img src="images/showcase2.png" style="width:100%; margin-top: 8px;" onclick="onClick(this)" alt="Windows for the atrium">
+                        <img src="images/showcase5.png" style="width:100%; margin-top: 8px;" onclick="onClick(this)" alt="Windows for the atrium">
+                    </div>
+                    <div class="col-md-6 ">
+                        <img src="images/showcase3.png" style="width:100% ;margin-top: 8px;" onclick="onClick(this)" alt="Windows for the atrium">
+                        <img src="images/showcase4.png" style="width:100% ;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                        <img src="images/showcase7.png" style="width:100%; margin-top: 8px;" onclick="onClick(this)" alt="Windows for the atrium">
+                    </div>
+                </div>
+
+                <!-- Modal for full size images on click-->
+                <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
+                    <span class="btn black display-topright" style=" font-size: 36px">&times;</span>
+                    <div class="modal-content animate-zoom  padding-64" style="  background-color: transparent; text-align: center">
+                        <img id="img01" class="w3-image">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div id="services" style="margin-top:75px">
+                    <h1 class="subHead"><b>Services.</b></h1>
+                    <hr style="width:50px;border:5px solid #3b9ec4; margin-left:5px" class="line">
+                    <p>We are a Modular Kitchens And interior design service that focus on what's best for your home and what's best for you!</p>
+                    <p>Our servicies are : -</p>
+                    <h4><i class="material-icons" style="color:#3b9ec4 ;">radio_button_checked</i> Modular Kitchens
+                    </h4>
+                    <h4><i class="material-icons" style="color:#3b9ec4 ;">radio_button_checked</i> Wardrobe
+                    </h4>
+                    <h4><i class="material-icons" style="color:#3b9ec4 ;">radio_button_checked</i> Customized Furniture
+                    </h4>
+                    <h4><i class="material-icons" style="color:#3b9ec4 ;">radio_button_checked</i> Wallpaper
+                    </h4>
+                    <h4><i class="material-icons" style="color:#3b9ec4 ;">radio_button_checked</i> Vanity
+                    </h4>
+
+                    <div style="margin-left:10px">
+                        <h4 style="color: #17bd9b;font-size: 40px;font-weight: 1000;">Catalogue</h4>
+                        <hr style="width:50px;border:5px solid #17bd9b; margin-left:15px" class="line">
+
+                        <h4><i class="material-icons" style="color:#17bd9b ;margin-top: 25px;">radio_button_checked</i> Wardrobe
+                        </h4>
+                        <div class="row  ">
+                            <div class="col-md-6 ">
+                                <img src="images/showcase7.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                            </div>
+                            <div class="col-md-6 ">
+                                <img src="images/wardrobe2.png" style="width:100% ;margin-top: 8px;" onclick="onClick(this)" alt="Windows for the atrium">
+                            </div>
+                        </div>
+
+                        <h4><i class="material-icons" style="color:#17bd9b ;margin-top: 25px;">radio_button_checked</i> Sofa
+                        </h4>
+                        <div class="row  ">
+                            <div class="col-md-6 ">
+                                <img src="images/showcase5.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <img src="images/sofa1.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+
+                            </div>
+                            <div class="col-md-6 ">
+                                <img src="images/showcase6.png" style="width:100% ;margin-top: 8px;" onclick="onClick(this)" alt="Windows for the atrium">
+                                <img src="images/sofa2.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+
+                            </div>
+                        </div>
+
+                        <h4><i class="material-icons" style="color:#17bd9b ;margin-top: 25px;">radio_button_checked</i> Modular Kitchen
+                        </h4>
+                        <div class="row  ">
+                            <div class="col-md-6 ">
+                                <img src="images/showcase2.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <img src="images/mk1.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                            </div>
+                            <div class="col-md-6 ">
+                                <img src="images/showcase4.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <img src="images/mk2.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                            </div>
+                        </div>
+
+                        <h4><i class="material-icons" style="color:#17bd9b ;margin-top: 25px;">radio_button_checked</i> Interior
+                        </h4>
+                        <div class="row  ">
+                            <div class="col-md-6 ">
+                                <img src="images/showcase3.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <img src="images/interior3.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                            </div>
+                            <div class="col-md-6 ">
+                                <img src="images/interior1.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                                <img src="images/interior2.png" style="width:100%;margin-top: 8px;" onclick="onClick(this)" alt="Concrete meets bricks">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Maps -->
+                <div id="location" style="margin-top:75px">
+                    <h1 class="subHead"><b>How to reach.</b></h1>
+                    <hr style="width:50px;border:5px solid #3b9ec4; margin-left:5px" class="line">
+                    <p>You can reach here by bus or your private vehicle.</p>
+                    <p>Naksha Home Decor.</p>
+                    <p><i class="material-icons">location_on</i> Chail chowk ,tehsil chachyot, Mandi, Himachal Pradesh 175028, India
+                    </p>
+                    <p>LandMark : Near Chicken Corner , Near Sabji Mandi</p>
+                    <p>Availability: 24x7 </p>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d212.46511202528305!2d77.0059516!3d31.5669307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39051bbbd45d2d9f%3A0xf3e211484b9539e4!2schicken%20corner!5e0!3m2!1sen!2sin!4v1585048201474!5m2!1sen!2sin"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                </div>
+
+
+                <!-- Proprietor -->
+                <div id="Proprietor" style="margin-top:75px">
+                    <h1 class="subHead"><b>Proprietor.</b></h1>
+                    <hr style="width:50px;border:5px solid #3b9ec4; margin-left:5px" class="line">
+
+                    <p><b>For your help</b>:</p>
+                </div>
+
+
+                <!-- The Team -->
+                <div class="row ">
+                    <div class="col-md-4 " style="max-width: 300px;">
+                        <div class="light-grey" style="border-radius: 10px;">
+                            <img src="images/owner.png" alt="owner" style="width:90%; border-radius: 10px; margin-left: 12px; margin-bottom: 5px;margin-top: 8px;">
+                            <div class="container">
+                                <h3>Er. Atul Pathania</h3>
+                                <p class="opacity">owner & Founder</p>
+                                <p>Master of Business Administration</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- cutomer review -->
+                <div id="customerreviews" style="margin-top:75px">
+                    <h1 class="subHead"><b>Cutomer Reviews.</b></h1>
+                    <hr style="width:50px;border:5px solid #3b9ec4; margin-left:5px" class="line">
+                    <p></p>
+
+                    <!-- review -->
+                    <div class="col-md-10 review" style=" border-radius: 30px; ">
+                        <div class="row ">
+                            <div class="col-md-1">
+                                <img src="images/owner.png " style="width: 80px;height: 80px; margin-top: 15px;margin-left: 30px;" alt="owner ">
+                            </div>
+                            <div class="container col-md-6" style="margin-top: 10px;">
+                                <h3><b>Shubham Gupta</b></h3>
+                                <i class="material-icons">star star star star star_half</i>
+                                <p>Highly Satisfactory</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- review -->
+                    <div class="col-md-10 review" style=" border-radius: 30px; margin-top: 20px; ">
+                        <div class="row ">
+                            <div class="col-md-1">
+                                <img src="images/owner.png " style="width: 80px;height: 80px; margin-top: 15px;margin-left: 30px;" alt="owner ">
+                            </div>
+                            <div class="container col-md-6" style="margin-top: 10px;">
+                                <h3><b>google user</b></h3>
+                                <i class="material-icons">star star star star star_border</i>
+                                <p>Very nice.</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- Contact -->
+                <div id="contact" style="margin-top:75px ">
+                    <h1 class="subHead "><b>Contact Us.</b></h1>
+                    <hr style="width:50px;border:5px solid #3b9ec4; margin-left:5px " class="line ">
+                    <div class="row ">
+                        <div class="col-md-4 " style="margin-top: 10px; ">
+                            <div class="light-grey " style="border-radius: 10px; ">
+                                <div class="container-fluid padding ">
+                                    <img src="images/whatsapp.png " alt="whatsapp " style="width: 60px; height: 60px;margin-bottom: 15px; ">
+                                    <h3>+91 7018164180</h3><br>
+                                    <p class="opacity ">Atul </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 " style="margin-top: 10px; ">
+                            <div class="light-grey " style="border-radius: 10px; ">
+                                <div class="container-fluid padding ">
+                                    <img src="images/call.png " alt="call " style="width: 60px; height: 60px; ">
+                                    <h4>+91 7018164180</h4>
+                                    <h4>+91 9459796971</h4>
+                                    <p class="opacity ">Atul </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 " style="margin-top: 10px; ">
+                            <div class="light-grey " style="border-radius: 10px; ">
+                                <div class="container-fluid padding ">
+                                    <img src="images/gmail.png " alt="gmail " style="width: 60px; height: 60px; ">
+                                    <h6>nakshahomedecor</h6>
+                                    <h6>@gmail.com</h6>
+                                    <br>
+                                    <p class="opacity ">Naksha Home Decor </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bottom line -->
+        <div class="light-grey col-md-12 container padding-32 " style="margin-top:75px;padding-right:58px ">
+            <p class="right ">Powered by <a href="https://github.com/thakurnitin2684 " title="Nitin Thakur " target="_blank " class="hover-opacity ">thakurnitin2684</a></p>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+
+    <script>
+        // Script to open and close sidebar
+        function sidebaropen() {
+
+            document.getElementById("mysmallSidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+
+        }
+
+
+
+        function sidebarclose() {
+
+            document.getElementById("mysmallSidebar").style.display = "none ";
+            document.getElementById("myOverlay").style.display = "none ";
+        }
+
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block ";
+            var captionText = document.getElementById("caption ");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+
+
+</html>
